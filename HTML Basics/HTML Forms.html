@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Demo</title>
+</head>
+
+<body>
+  <h1>Login</h1>
+
+  <!-- Action - where the form sends data to
+       Method - what HTTP method (get / post) -->
+
+  <!-- This is one way of doing labels, having the inputs nested inside them -->
+<!-- the "required" validation for this one will not let you submit without a valid Email (using an @ sign) -->
+  <form>
+    <label for="Email">Email: <input type="email" placeholder="Email"></label>
+      <label for="Password">Password: <input type="password" placeholder="password"> </label>
+        <input type="submit">
+  </form>
+
+  <!-- This is another way of doing labels, calling them with the for and id -->
+<!-- The "required" validation makes sure that the attribute it is used on is not empty -->
+  <form>
+    <label for="Username">Username: </label>
+      <input id="Username" type="text" placeholder="username" required>
+      <label for="Password">Password: </label>
+        <input id="Password" type="password" placeholder="password" required>
+
+        <input type="submit">
+  </form>
+<form action="">
+  <!-- Radio button -->
+    <p>Do you prefer cats or dogs?</p>
+    <label for ="dogs">Dogs: </label>
+  <input name="petchoice" id="dogs" type="radio" value="DOGS">
+    <label for ="cats">Cats: </label>
+  <input name="petchoice" id="cats"type="radio" value="CATS">
+
+  <!-- Dropdown Menu options -->
+  <p>What's your favorite color?</p>
+  <select name="Color" id="">
+    <option value="RED">Red</option>
+    <option value="ORANGE">Orange</option>
+    <option value="YELLOW">Yellow</option>
+  </select>
+
+  <input type="text">
+  <textarea name ="paragraph"rows="5" cols="30"> </textarea>
+  <button>Go!</button>
+  </form>
+</body>
+
+</html>
