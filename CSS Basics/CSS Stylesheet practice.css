@@ -1,0 +1,21 @@
+/* selector {
+property: value;} */
+
+h1 {
+  color: rgb(170, 140, 110);
+  border-color: rgba(152, 152, 152, 1);
+  border-width: 2px;
+  border-style: solid;
+}
+li {
+  color: rgb(163, 150, 147);
+}
+h4 {
+  background: rgba(255, 0, 0, 0.1);
+}
+body {
+  /* background: url(https://www.wildsheffield.com/wp-content/uploads/2018/04/greno-woods.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
