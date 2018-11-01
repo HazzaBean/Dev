@@ -1,55 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Nest Light - Responsive Bootstrap 4 Theme</title>
-  <meta name="description" content=""/>
-  <meta name="keywords" content=""/>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <!-- CSS Sheet -->
-	<link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet" href="Index.css">
 </head>
-<body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">NEST</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="MainNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a href="#" class="nav-item nav-link">HOME</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-item nav-link">ABOUT</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-item nav-link">PORTFOLIO</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-item nav-link">TEAM</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-item nav-link">CONNECT</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-<section id="home" class="bg-cover bg-gray bg-overlay-black-6">
-  <div class="container h-100">
-    <div class="row align-items-center justify-content-center">
-      <h1 class="Display-3 text-white">NEST RESPONSIVE BOOTSTRAP THEME</h1>
+<body data-spy="scroll" data-target="#menu">
+
+  <!-- Home Section -->
+  <div id="home">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/nest.png" alt="Nest"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- start of landing page -->
+    <div class="landing">
+      <div class="home-wrap">
+        <div class="home-inner">
+        </div>
+      </div>
+    </div>
+    <!-- start landing page captions -->
+    <div class="caption center-block text-center">
+      <h3>NEST RESPONSIVE BOOTSTRAP THEME</h3>
+      <a href="#about" class="btn btn-outline-light">Get Started</a>
     </div>
   </div>
-</section>
-<!--- Script Source Files -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <!-- end of Home section -->
+
+  <!-- Start About Section -->
+  <div id="about">
+    <div class="jumbotron">
+      <h3 class="heading text-center">About</h3>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h4>Information Here</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam placeat officiis facere alias voluptatem sequi aperiam fugiat. Adipisci, eligendi, tempore!</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Some More Info</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex sapiente aliquid accusantium, ratione ipsum fugit!</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>More Information</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro soluta ad earum non sapiente ut aliquam voluptate deleniti quod recusandae et, totam id labore incidunt fugiat, corrupti minima odio rerum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About Section -->
+
+  <!-- Start Portfolio Section -->
+  <div id="portfolio">
+    <div class="container-fluid mt-2">
+      <h3 class="heading text-center">Portfolio</h3>
+      <div class="row no-padding">
+        <div class="col-md-6">
+          <img class="portfolio" src="img/1.png" alt="Portfolio1">
+        </div>
+        <div class="col-md-6">
+          <img class="portfolio" src="img/2.png" alt="Portfolio2">
+        </div>
+        <div class="col-md-6">
+          <img class="portfolio" src="img/3.png" alt="Portfolio3">
+        </div>
+        <div class="col-md-6">
+          <img class="portfolio" src="img/4.png" alt="Portfolio4">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio Section -->
+  <!-- Start testimonials section -->
+  <div id="testimonials">
+    <h3 class="heading text-center">Testemonials</h3>
+    <div class="row justify-content-around">
+      <div class="row-md-6">
+        <div class="card text-center">
+          <img src="img/5.png" alt="John Lee" class="card-img-top">
+          <div class="card-body">
+            <h4>John Lee</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, numquam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row-md-6">
+        <div class="card text-center">
+          <img src="img/6.png" alt="Jessica Miller" class="card-img-top">
+          <div class="card-body">
+            <h4>Jessica Miller</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, numquam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End tetimonials section -->
+
+  <!-- Start Contact section  -->
+<div id="contact">
+  <div class="container-fluid footer">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center">
+        <img src="img/nest.png" alt="Nest Logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo accusantium tempore reprehenderit! Dignissimos sed delectus nihil totam dolorum nam. Nulla magnam aut necessitatibus et aliquam excepturi, blanditiis dolores, hic minus aspernatur, unde facere reiciendis molestiae! Modi ab ad in?</p>
+        <strong>Our Location</strong>
+        <p>Street Name <br> City, 000000</p>
+        <strong>Contact info</strong>
+        <p>888-888-888 <br> email@email.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- End Conctact section  -->
+  <!--- Script Source Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
