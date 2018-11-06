@@ -14,11 +14,13 @@
 //   you can enter and drink
 //
 
-var age = prompt("How old are you?")
+var age = Number(prompt("How old are you?"))
+while (isNaN(age)) {
+  age = Number(prompt("How old are you?"))
+}
 
 if (age < 18) {
   console.log("Sorry, you are not old enough to enter the venue.")
-
 } else if (age < 21) {
   console.log("You can enter, but cannot drink")
 } else {
@@ -29,14 +31,14 @@ if (age < 0) {
   console.log("Error, you cannot be negative years old....")
 }
 
-if (age == 21) {
+if (age === 21) {
   console.log("Happy 21st birthday!!!")
 }
 
-if (age % 2 !== 0){
+if (age % 2 !== 0) {
   console.log("Your Age is odd.....")
 }
 
-if (age %  == 0) {
-  console.log("perfect square!!!")
+if (age % Math.sqrt(age) === 0) {
+  console.log("Your age is a perfect square!");
 }
